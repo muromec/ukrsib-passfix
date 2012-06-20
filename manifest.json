@@ -1,0 +1,12 @@
+{
+  "name": "Ukrsib password fix",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Fixes idiotic password field",
+  "content_scripts": [
+    {
+      "matches": ["https://secure.my.ukrsibbank.com/web_banking/protected/welcome.jsf"],
+      "js": ["jquery.js", "jquery.cookies.js", "pwd.js"]
+    }
+  ]
+}
